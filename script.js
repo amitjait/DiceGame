@@ -195,6 +195,7 @@ function shuffle(){
                 let h3 = document.createElement('h3');
 
                 h3.innerHTML = "BAD LUCK! Your Score is not more then 10!";
+                h3.style.textAlign = "center";
                 message.appendChild(h3);
 
                 let dic = document.getElementById('dice');

@@ -38,7 +38,7 @@ img{
   #formPopup {
     display: none;
     position: fixed;
-    left: 45%;
+    left: 50%;
     top: 5%;
     transform: translate(-50%, 5%);
     border: 3px solid #999999;
