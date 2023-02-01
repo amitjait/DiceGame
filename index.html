@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="imgs">
+        <img src="img1.png" alt="" id="img1" class="image active">
+        <img src="img2.png" alt="" id="img2">
+        <img src="img3.png" alt="" id="img3">
+        <img src="EndGame.jpg" alt="" id="img4">
+    </div>
+
+    <div class="loginPopup">
+        <div id="formPopup">
+            <h3>Registration Form</h3> 
+            <form class="formContainer" name="myform">
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name"><br><br>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email"><br><br>
+                <label for="userName">User Name</label><br>
+                <input type="text" name="userName" id="userName"><br><br>
+                <p id="alert"></p>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="details" id="detail">
+        <table>
+            <th>Details</th>
+            <tr>
+                <td>Name : </td>
+                <td id="nameLi"></td>
+            </tr>
+            <tr>
+                <td>User Name : </td>
+                <td id="userNameLi"></td>
+            </tr>
+            <tr>
+                <td>Email : </td>
+                <td id="emailLi"></td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="dice" id="dice">
+        <p style="color: Yellow;">You can roll dice 3 times only!</p>
+        <h3 style="color: yellow;">Click On Dice</h3>
+        <img src="diceDefault.png" alt="DICE" id="diceImg">
+        <h3 id="score">Your Score : 0</h3>
+    </div>
+
+    <div class="lastMessage" id="lm">
+
+    </div>
+
+    <div class="outerTerm">
+        <div id="term">
+            <div class="message">Your score is not more than 10! <br> Now you only have <b>one more</b> chance.<br>Please close it and click on dice Game again!</div>   
+            <button id="close">Close</button>
+        </div>
+    </div>
+
+    <div class="outerFinal">
+        <div id="congrats">
+            <div id="coupan">
+
+            </div>
+            <img src="" alt="Congratulation!" id="cong">
+            <div style="font-size: xx-large;margin-top: -15px;">
+                &#128516;
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

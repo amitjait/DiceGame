@@ -1,0 +1,214 @@
+body{
+    margin: 0px auto;
+    background-color: #1B119C;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%231B119C' cx='50' cy='0' r='50'/%3E%3Cg fill='%230027aa' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%230037b7' cx='50' cy='100' r='50'/%3E%3Cg fill='%230045c3' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%230052cd' cx='50' cy='200' r='50'/%3E%3Cg fill='%23005ed6' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23006ade' cx='50' cy='300' r='50'/%3E%3Cg fill='%230076e4' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%230081e9' cx='50' cy='400' r='50'/%3E%3Cg fill='%23008ced' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%230097f0' cx='50' cy='500' r='50'/%3E%3Cg fill='%2300a2f2' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%2300adf4' cx='50' cy='600' r='50'/%3E%3Cg fill='%2300b8f5' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%2300c2f5' cx='50' cy='700' r='50'/%3E%3Cg fill='%2300cdf6' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%2300d7f6' cx='50' cy='800' r='50'/%3E%3Cg fill='%2300e1f6' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%2300ebf6' cx='50' cy='900' r='50'/%3E%3Cg fill='%2334f5f7' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%235EFFF8' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: contain;
+
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+img{
+    width: 200px;
+    height: 300px;
+    margin: 1rem;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.imgs{
+    display: flex;
+    margin: 0px auto;
+    width: fit-content;
+    margin-top: 5vh;
+}
+.active:hover{
+    cursor: pointer;
+}
+
+.active{
+    border: 5px solid yellow;
+}
+
+.loginPopup {
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  #formPopup {
+    display: none;
+    position: fixed;
+    left: 45%;
+    top: 5%;
+    transform: translate(-50%, 5%);
+    border: 3px solid #999999;
+    z-index: 9;
+
+
+    margin: 0px auto;
+    margin-top: 2rem;
+    width: 20rem;
+    height: 25rem;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(22, 166, 255);
+    color: white;
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.82);
+    outline: 5px solid rgba(212, 238, 255, 0.54);
+    outline-offset: 4px;
+  }
+.formContainer{
+    text-align: left;
+    margin-left: 10px;
+}
+
+input{
+    margin-bottom: 0.5rem;
+    margin-top: 5px;
+    height: 25px;
+    width: 90%;
+    border-radius: 5px;
+    border-color: wheat;
+}
+
+#alert{
+    display: none;
+    color: red;
+    /* margin-top: -15px; */
+}
+
+#submit{
+    width: 5rem;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: lightblue;
+}
+
+#submit:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+    width: 5.1rem;
+    height: 2.1rem;
+}
+
+.details{
+    display: none;
+    margin:0px auto;
+    width: 30vw;
+    background-color: white;
+    height: 20vh;
+    border-radius: 5px;
+    padding-top: 2rem;
+}
+
+.dice{
+    display: none;
+    margin: 0px auto;
+    text-align: center;
+    /* border: 1px solid black; */
+    width: 15rem;
+    /* background-color: white; */
+    border: none;
+}
+.dice img{
+    margin: 0px auto;
+    width: 10rem;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;   
+    font-size: xx-large;
+}
+
+.lastMessage{
+    margin: 0px auto;
+    width: 400px;
+}
+
+table{
+    margin: 0px auto;
+}
+th{
+    text-align: left;
+}
+
+td{
+    width: 8rem;
+}
+
+.outerTerm{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+#term{
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    width: 30rem;
+    height: 10rem;
+    transform: translate(-50%, 5%);
+    /* border: 3px solid #999999; */
+    z-index: 9;
+
+    background-color: orange;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+.message{
+    margin-top: 1rem;
+}
+#close{
+    margin-top: 1rem;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: red;
+}
+
+#close:hover{
+    cursor: pointer;
+    background-color: orangered;
+    width: 5.1rem;
+    height: 2.1rem;
+}
+#congrats{
+    display: none;
+}
+/* congarts image */
+#cong{
+    width: 400px;
+    height: auto;
+}
+
+.outerFinal{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+#coupan{
+    margin-top: 1rem;
+}
+
+#congrats{
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    width: 30rem;
+    height: 15rem;
+    transform: translate(-50%, 5%);
+    /* border: 3px solid #999999; */
+    z-index: 9;
+
+    font-family: Verdana, Geneva, sans-serif;
+
+    background-color: white;
+    border: 2px solid lightgreen;
+    border-radius: 5px;
+    color: green;
+    font-weight: bold;
+
+}
