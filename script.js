@@ -5,6 +5,13 @@ let closeTerm = document.getElementById('close');
 closeTerm.addEventListener('click', ()=>{
     let term = document.getElementById('term');
     term.style.display = "none";
+});
+
+let successBtn = document.getElementById('OK');
+
+successBtn.addEventListener('click', ()=>{
+    let success = document.getElementById('success');
+    success.style.display = "none";
 })
 
 imgs[0].addEventListener('click', fisrtImage)
@@ -43,6 +50,18 @@ function formSubmit(e){
         form.name.style.backgroundColor = "white"; 
     }
 
+    if(!ValidateEmail(email) || email == ""){
+        form.email.style.border = "2px solid red";
+        form.email.style.backgroundColor = "lightred"; 
+        let p = document.getElementById('alert');
+        p.innerHTML = "Enter a valid Email!"; 
+        p.style.display = "block";
+        return;
+    }else{
+        form.email.style.border = "0px";
+        form.email.style.backgroundColor = "white"; 
+    }
+
     let na = userName.split(' ');
     if(userName == "" || na.length < 1 || na.length > 1){
         form.userName.style.border = "2px solid red";
@@ -56,17 +75,7 @@ function formSubmit(e){
         form.userName.style.backgroundColor = "white"; 
     }
 
-    if(!ValidateEmail(email) || email == ""){
-        form.email.style.border = "2px solid red";
-        form.email.style.backgroundColor = "lightred"; 
-        let p = document.getElementById('alert');
-        p.innerHTML = "Enter a valid Email!"; 
-        p.style.display = "block";
-        return;
-    }else{
-        form.email.style.border = "0px";
-        form.email.style.backgroundColor = "white"; 
-    }
+
 
     let obj = {
         name:name,
@@ -185,6 +194,9 @@ function shuffle(){
     if(click >= 3){
         t--;
         if(sum > 10){
+            let success = document.getElementById('success');
+            success.style.display = "block";
+
             coupanImage();
             click = 0;
             sum = 0;
@@ -224,9 +236,8 @@ function shuffle(){
 }
 
 function coupanImage(){
-    console.log("IN");
+    // console.log("IN");
     let dic = document.getElementById('dice');
-
     imgs[3].addEventListener('click', coupan);
 
     dic.removeEventListener('click', shuffle);
